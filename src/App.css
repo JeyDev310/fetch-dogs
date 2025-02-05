@@ -1,0 +1,176 @@
+:root {
+  --background-color: #fff;
+  --opacity-background-color: #ffffffa6;
+  --foreground-color: #000;
+}
+
+.white-label {
+  color: #fff;
+}
+
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  max-width: 100vw;
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+.login-page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url("https://lppool.catalogsites.net/lf?source=url[file:MasterSite/DG38/dg38_251_2_toys.jpg]&scale=width[1140],height[542]&sink=format[jpg],quality[80]") no-repeat left top/cover;
+  filter: blur(3px);
+  z-index: -1;
+}
+
+.login-form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 478px;
+  background-color: var(--opacity-background-color);
+  padding: 40px;
+  margin: auto;
+  border-radius: 20px;
+}
+
+.login-logo {
+  margin: auto;
+}
+
+.select-breeds {
+  width: 300px;
+}
+
+.select-sort {
+  width: 100px;
+}
+
+.search-page {
+  width: 100%;
+}
+
+.filter-section {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: var(--background-color);
+  margin-bottom: 30px;
+  box-shadow: 0 12px 20px 6px rgb(104 112 118 / 0.08);
+  z-index: 100;
+  padding: 20px;
+  padding-bottom: 60px;
+}
+
+.filter-logo {
+  margin-bottom: 20px;
+}
+
+.filter-item {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 16px;
+  margin-right: 12px;;
+}
+
+.filter-pagination {
+  display: flex;
+  align-items: center;
+  float: right;
+}
+
+.cards-container {
+  padding: 20px;
+}
+
+.customInput {
+  width: 100px;
+}
+
+.pagination {
+  display: inline-block;
+}
+
+.card-item {
+  margin-bottom: 16px;
+}
+
+.ant-card {
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease-in-out;
+}
+
+.ant-card:hover {
+  transform: scale(1.05);
+  backdrop-filter: blur(15px);
+}
+
+.ant-card-cover > img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.match-card.ant-card .ant-card-cover > img {
+  height: 400px;
+}
+
+.btn-favorite {
+  float: right;
+}
+
+.favorite-confirm-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.location-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.locaions-table {
+  margin-top: 20px;
+}
+
+.select-states {
+  width: 100%;
+}
+
+.age-slider {
+  width: 100px;
+}
+
+.scrollTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 45px;
+  cursor: pointer;
+  box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.08),
+    0 3px 6px -4px rgba(0, 0, 0, 0.12),
+    0 9px 28px 8px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(10px);
+  transition: transform 0.2s ease-in-out;
+}
+
+.scrollTop:hover {
+  transform: scale(1.05);
+  backdrop-filter: blur(15px);
+}
+
+.loadingSpin {
+  position: fixed;
+  left: 50%;
+  top: 400px;
+  z-index: 3000;
+}
